@@ -68,7 +68,7 @@ int print_alias(list_t *node)
 		for (m = node->str; m <= s; m++)
 			_putchar(*m);
 		_putchar('\'');
-		_puts(p + 1);
+		_puts(s + 1);
 		_puts("'\n");
 		return (0);
 	}
