@@ -19,7 +19,9 @@ void clear_info(info_t *info)
  */
 void set_info(info_t *info, char **av)
 {
-	int u = 0;
+	int u;
+
+	u = 0;
 
 	info->fname = av[0];
 	if (info->arg)

@@ -34,7 +34,8 @@ int _myexit(info_t *info)
  */
 int _mycd(info_t *info)
 {
-	char *p, *dir, buffer[1024];
+	char *p, *dir;
+	char buffer[1024];
 	int chdir_ret;
 
 	p = getcwd(buffer, 1024);

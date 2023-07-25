@@ -7,7 +7,9 @@
  */
 void _eputs(char *str)
 {
-	int u = 0;
+	int u;
+
+	u = 0;
 
 	if (!str)
 		return;
@@ -67,7 +69,9 @@ int _putfd(char c, int fd)
  */
 int _putsfd(char *str, int fd)
 {
-	int u = 0;
+	int u;
+
+	u = 0;
 
 	if (!str)
 		return (0);

@@ -19,7 +19,8 @@ int _myhistory(info_t *info)
  */
 int unset_alias(info_t *info, char *str)
 {
-	char *s, n;
+	char *s;
+	char n;
 	int y;
 
 	s = _strchr(str, '=');
@@ -82,8 +83,12 @@ int print_alias(list_t *node)
  */
 int _myalias(info_t *info)
 {
-	int x = 0;
-	char *s = NULL;
+	int x;
+	char *s;
+
+	x = 0;
+	s = NULL;
+
 	list_t *node = NULL;
 
 	if (info->argc == 1)

@@ -2,15 +2,17 @@
 
 /**
  * main - Entry point
- * @ac: Argument count
- * @av: Argument vector
+ * @ac: ArgumentCount
+ * @av: ArgumentVector
  * Return: 0 on success, 1 on error
  */
 
 int main(int ac, char **av)
 {
 	info_t info[] = { INFO_INIT };
-	int fd = 2;
+	int fd;
+
+	fd = 2;
 
 	asm ("mov %1, %0\n\t"
 			"add $3, %0"

@@ -7,7 +7,9 @@
  */
 int _erratoi(char *s)
 {
-	int u = 0;
+	int u;
+
+	u = 0;
 	unsigned long int result = 0;
 
 	if (*s == '+')
@@ -53,7 +55,8 @@ void print_error(info_t *info, char *estr)
 int print_d(int input, int fd)
 {
 	int (*__putchar)(char) = _putchar;
-	int x, count = 0;
+	int x;
+	int count = 0;
 	unsigned int _abs_, current;
 
 	if (fd == STDERR_FILENO)
@@ -93,9 +96,13 @@ char *convert_number(long int num, int base, int flags)
 {
 	static char *array;
 	static char buffer[50];
-	char sign = 0;
+	char sign;
+
+	sign = 0;
 	char *ptr;
-	unsigned long n = num;
+	unsigned long n;
+
+	n = num;
 
 	if (!(flags & CONVERT_UNSIGNED) && num < 0)
 	{

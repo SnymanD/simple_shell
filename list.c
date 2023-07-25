@@ -80,7 +80,9 @@ list_t *add_node_end(list_t **head, const char *str, int num)
  */
 size_t print_list_str(const list_t *h)
 {
-	size_t x = 0;
+	size_t x;
+
+	x = 0;
 
 	while (h)
 	{
@@ -101,7 +103,9 @@ size_t print_list_str(const list_t *h)
 int delete_node_at_index(list_t **head, unsigned int index)
 {
 	list_t *node, *prev_node;
-	unsigned int u = 0;
+	unsigned int u;
+
+	u = 0;
 
 	if (!head || !*head)
 		return (0);
