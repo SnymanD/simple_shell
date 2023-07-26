@@ -34,8 +34,9 @@ int write_history(info_t *info)
 	ssize_t fd;
 	char *file_name;
 
-	file_name = get_history_file(info);
 	list_t *node = NULL;
+
+	file_name = get_history_file(info);
 
 	if (!file_name)
 		return (-1);

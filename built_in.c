@@ -86,10 +86,10 @@ int _myalias(info_t *info)
 	int x;
 	char *s;
 
+	list_t *node = NULL;
+
 	x = 0;
 	s = NULL;
-
-	list_t *node = NULL;
 
 	if (info->argc == 1)
 	{

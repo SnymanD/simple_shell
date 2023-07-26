@@ -10,9 +10,9 @@
 char **strtow(char *str, char *d)
 {
 	int x, y, k, m, numwords;
+	char **s;
 
 	numwords = 0;
-	char **s;
 
 	if (str == NULL || str[0] == 0)
 		return (NULL);

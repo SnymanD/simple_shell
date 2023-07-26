@@ -8,9 +8,10 @@
 int _erratoi(char *s)
 {
 	int u;
+	unsigned long int result;
 
 	u = 0;
-	unsigned long int result = 0;
+	result = 0;
 
 	if (*s == '+')
 		s++;
@@ -97,12 +98,11 @@ char *convert_number(long int num, int base, int flags)
 	static char *array;
 	static char buffer[50];
 	char sign;
-
-	sign = 0;
 	char *ptr;
 	unsigned long n;
 
 	n = num;
+	sign = 0;
 
 	if (!(flags & CONVERT_UNSIGNED) && num < 0)
 	{

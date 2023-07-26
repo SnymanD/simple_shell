@@ -27,10 +27,9 @@ int _unsetenv(info_t *info, char *var)
 {
 	list_t *node = info->env;
 	size_t x;
+	char *p;
 
 	x = 0;
-
-	char *p;
 
 	if (!node || !var)
 		return (0);
@@ -62,10 +61,10 @@ int _setenv(info_t *info, char *var, char *value)
 {
 	char *buf;
 
-	buf = NULL;
-
 	list_t *node;
 	char *s;
+
+	buf = NULL;
 
 	if (!var || !value)
 		return (0);

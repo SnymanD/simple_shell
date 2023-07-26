@@ -10,10 +10,9 @@
 ssize_t input_buf(info_t *info, char **buf, size_t *len)
 {
 	ssize_t u;
+	size_t len_v;
 
 	u = 0;
-
-	size_t len_v;
 
 	len_v = 0;
 
@@ -56,11 +55,10 @@ ssize_t get_input(info_t *info)
 	static char *buf;
 	static size_t u, v, len;
 	ssize_t a;
-
-	a = 0;
-
 	char **buf_p = &(info->arg);
 	char *p;
+
+	a = 0;
 
 	_putchar(BUF_FLUSH);
 	a = input_buf(info, &buf, &len);
